@@ -41,7 +41,7 @@ public class CharacterMovements : MonoBehaviour
         if(x == -1)
             gameObject.transform.localScale = new Vector3 (-3.5f, 3.5f, 3.5f);
         else
-            gameObject.transform.localScale = new Vector3 (-3.5f, 3.5f, 3.5f);
+            gameObject.transform.localScale = new Vector3 (3.5f, 3.5f, 3.5f);
         
 
 
