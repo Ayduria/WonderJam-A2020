@@ -2353,6 +2353,7 @@ MonoBehaviour:
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
   rememberGroundedFor: 0.1
+  characterRight: 1
 --- !u!61 &1582401978
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2404,7 +2405,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 37d1d2e263810c34d82cfe854ef692ce, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
