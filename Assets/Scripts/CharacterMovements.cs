@@ -16,10 +16,15 @@ public class CharacterMovements : MonoBehaviour
     public float lowJumpMultiplier = 2f;
     public float rememberGroundedFor; 
     float lastTimeGrounded;
+    public bool characterRight = true;
+
+    private Animator characterAnimations;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.transform.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
+        characterAnimations = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -30,6 +35,15 @@ public class CharacterMovements : MonoBehaviour
         Jump();
         CheckIfGrounded();
         BetterJump();
+
+
+        //Rotate 
+        if(!characterRight){
+            gameObject.transform.localScale = new Vector3 (-0.5f, 0.5f, 0.5f);
+        }
+        else{
+            gameObject.transform.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
+        }
     }
 
     void Move() { 
@@ -38,10 +52,27 @@ public class CharacterMovements : MonoBehaviour
 
         Vector3 InitialPos = gameObject.transform.localScale;
 
-        if(x == -1)
-            gameObject.transform.localScale = new Vector3 (-3.5f, 3.5f, 3.5f);
-        else
-            gameObject.transform.localScale = new Vector3 (3.5f, 3.5f, 3.5f);
+        if(x == 1){
+            characterRight = true;
+        }
+        else if(x == -1){
+            characterRight = false;
+        }
+
+        
+
+
+        
+        
+        //Change l'état de l'animation
+        if(x == 0){
+            characterAnimations.SetBool("IsRunning", false);
+        }
+        else{
+            characterAnimations.SetBool("IsRunning", true);
+        }
+
+
         
 
 
