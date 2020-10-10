@@ -14,10 +14,6 @@ public class InstantiatePrefabs : MonoBehaviour
 
         prefabs = Resources.LoadAll<GameObject>("Ingredients");
 
-        for(int v = 0; v < prefabs.Length; v++){
-            Debug.Log(prefabs[v]);
-        }
-
         for (int i = 0; i < multiplier; i++)
         {  
             Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform.position, transform.rotation);
