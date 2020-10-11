@@ -16,7 +16,7 @@ public class Phaser : MonoBehaviour
     void Update()
     {
         if(gameObject.transform.position.y > PhaserObject.transform.position.y){
-            gameObject.layer = 9;
+            gameObject.layer = 14;
         }
     }
 

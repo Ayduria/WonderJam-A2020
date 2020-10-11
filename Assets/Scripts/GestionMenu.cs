@@ -9,19 +9,22 @@ public class GestionMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    public GameObject instructionMenuUI;
 
     public AudioMixer audioMixer;
 
     void Start()
     {
         pauseMenuUI.SetActive(false);
+        instructionMenuUI.SetActive(false);
+
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) || Time.timeScale == 1)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPaused)
             {

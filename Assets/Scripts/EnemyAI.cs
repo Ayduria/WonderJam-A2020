@@ -8,11 +8,12 @@ public class EnemyAI : MonoBehaviour
     public float speed;
     public float maxVelocity  = 50f;
     private Transform target;
-    public int level;
+    public int level = 1;
     public bool isGrounded;
     public int maxHealth;
     public int currentHealth;
     public int damage;
+    public bool groundedOnce = false;
     GameObject player;
 
     // Start is called before the first frame update
@@ -52,7 +53,9 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         checkHealth();
-        move();
+        if(groundedOnce){
+            move();
+        }
         jumpAttack();
     }
 
@@ -70,6 +73,8 @@ public class EnemyAI : MonoBehaviour
             TakeDamage(20);
         if (other.gameObject.tag == "Player")
             InflictDamage(damage);
+        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Hole")
+            groundedOnce = true;
     }
 
     private void OnCollisionExit2D(Collision2D other)

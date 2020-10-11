@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 6952178448461333175}
   - component: {fileID: 6148619699195516885}
   - component: {fileID: 3741656401179015556}
-  m_Layer: 10
+  - component: {fileID: -8135575725116328268}
+  m_Layer: 15
   m_Name: edritch
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +140,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008110017, y: -0.23113537}
+  m_Offset: {x: 0.008109629, y: -0.26763046}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -150,8 +151,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6107202, y: 2.5048504}
-  m_EdgeRadius: 0
+  m_Size: {x: 1.1889998, y: 2.1236808}
+  m_EdgeRadius: 0.1
 --- !u!114 &3741656401179015556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,3 +166,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PhaserObject: {fileID: 1865611186173815502, guid: 0a135ea7c53125545983631eaf759381, type: 3}
+--- !u!114 &-8135575725116328268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4651852068685439274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319a0a73c83581641aabef766faf9bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2000
+  maxVelocity: 50
+  level: 1
+  isGrounded: 0
+  maxHealth: 0
+  currentHealth: 0
+  damage: 0

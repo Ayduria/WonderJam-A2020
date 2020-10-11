@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -5194969290713640521}
   - component: {fileID: -6179862419653428143}
   - component: {fileID: 7432392574408479914}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: campignon
   m_TagString: Grabbable
   m_Icon: {fileID: 0}

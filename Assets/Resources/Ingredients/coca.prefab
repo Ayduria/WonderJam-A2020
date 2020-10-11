@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4586341796398317988}
   - component: {fileID: 3045880882339116879}
   - component: {fileID: 2442744989538382615}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: coca
   m_TagString: Grabbable
   m_Icon: {fileID: 0}

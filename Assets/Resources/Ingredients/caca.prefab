@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6911569848499239704}
   - component: {fileID: 2952349777321453605}
   - component: {fileID: 3272040505466139670}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: caca
   m_TagString: Grabbable
   m_Icon: {fileID: 0}
