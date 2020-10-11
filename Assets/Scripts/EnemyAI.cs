@@ -39,7 +39,6 @@ public class EnemyAI : MonoBehaviour
             level += finalQuantitiesSetter;
         }
 
-        Debug.Log(level);
         switch(level)
         {
             case 1: 
@@ -103,8 +102,10 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void checkHealth(){
-        if (currentHealth == 0)
+        if (currentHealth == 0){
             Destroy(gameObject);
+            GameObject.FindGameObjectWithTag("Spitter").GetComponent<Spitter>().monsterToKill -= 1;
+        }
     }
 
     private void move(){

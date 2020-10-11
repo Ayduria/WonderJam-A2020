@@ -371,14 +371,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 8489471778279498550, guid: f3396a1db287dc743b5b008846ce2406, type: 3}
+  - {fileID: 5761111067434418105, guid: 40cab6f16dc0ae145a4930c364ca687d, type: 3}
   - {fileID: 6898678830030393560, guid: 73d508e0f8e0e944088b0a5e6ecace69, type: 3}
-  - {fileID: 6902370443342864527, guid: d7930dd70ea532e4689b38d2539542f6, type: 3}
-  ingredientsQuantity: 030000000100000001000000
+  - {fileID: 16710957853024578, guid: c9afab5591b7a1a40a53abea7adebdf0, type: 3}
+  - {fileID: 8489471778279498550, guid: f3396a1db287dc743b5b008846ce2406, type: 3}
+  ingredientsQuantity: 04000000040000000400000004000000
   ingredientsName:
-  - Lego
-  - "Substance Naus\xE9abonde"
-  - Nongipmahc
+  - Contenant
+  - Puant
+  - Sutcac
+  - Jaune
   malus: 1
 --- !u!61 &79541181
 BoxCollider2D:

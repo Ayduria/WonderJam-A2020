@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 
 public class Spitter : MonoBehaviour
@@ -25,6 +25,7 @@ public class Spitter : MonoBehaviour
     public int[] finalQuantities;
     public int finalQuantitiesSetter;
 
+    public int monsterToKill = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,7 @@ public class Spitter : MonoBehaviour
             Timer -= Time.deltaTime;
             if (Timer <= 0f)
             {
+
 
                 if(timerEnded){
 
@@ -54,6 +56,8 @@ public class Spitter : MonoBehaviour
                         FinalMalus += finalQuantitiesSetter;
                     }
 
+                    Debug.Log(FinalMalus);
+
                     if(currentMonstersNumber <  numberOfMonsters){
 
                         switch(FinalMalus)
@@ -61,24 +65,31 @@ public class Spitter : MonoBehaviour
                             case 1: 
                                 prefabs = Resources.Load<GameObject>("Mobs/lapin");
                                 numberOfMonsters = 10;
+                                monsterToKill = 10;
                                 break;
                             case 2: 
                                 prefabs = Resources.Load<GameObject>("Mobs/slime");
                                 numberOfMonsters = 10;
+                                monsterToKill = 10;
                                 break;
                             case 3:
                                 prefabs = Resources.Load<GameObject>("Mobs/croc");
                                  numberOfMonsters = 7;
+                                 monsterToKill = 7;
                                 break;
                             case 4:
                                 prefabs = Resources.Load<GameObject>("Mobs/zombie");
                                  numberOfMonsters = 7;
+                                 monsterToKill = 7;
                                 break;
                             case 5:
                                 prefabs = Resources.Load<GameObject>("Mobs/edritch");
                                  numberOfMonsters = 5;
+                                 monsterToKill = 5;
                                 break;
                         }
+
+
                         
 
                         GameObject mob = Instantiate(prefabs, spawnerPosition.transform.position + prefabs.transform.localScale , transform.rotation);
@@ -89,6 +100,11 @@ public class Spitter : MonoBehaviour
                     currentMonstersNumber ++;
                 }
 
+            }
+
+
+            if(monsterToKill <= 0){
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         
             

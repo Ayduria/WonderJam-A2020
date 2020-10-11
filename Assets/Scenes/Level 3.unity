@@ -371,14 +371,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredients:
+  - {fileID: 5794993709748202950, guid: eb0930435b3a56248b691bc450a97519, type: 3}
+  - {fileID: 6466741719294611060, guid: 7346a6d56d6d1ff49b33a76e2b8b9234, type: 3}
   - {fileID: 8489471778279498550, guid: f3396a1db287dc743b5b008846ce2406, type: 3}
-  - {fileID: 6898678830030393560, guid: 73d508e0f8e0e944088b0a5e6ecace69, type: 3}
-  - {fileID: 6902370443342864527, guid: d7930dd70ea532e4689b38d2539542f6, type: 3}
-  ingredientsQuantity: 030000000100000001000000
+  ingredientsQuantity: 020000000200000002000000
   ingredientsName:
-  - Lego
-  - "Substance Naus\xE9abonde"
-  - Nongipmahc
+  - Globuleux
+  - Calcium
+  - Briseur de pied
   malus: 1
 --- !u!61 &79541181
 BoxCollider2D:
