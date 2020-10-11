@@ -371,14 +371,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 8489471778279498550, guid: f3396a1db287dc743b5b008846ce2406, type: 3}
-  - {fileID: 6898678830030393560, guid: 73d508e0f8e0e944088b0a5e6ecace69, type: 3}
+  - {fileID: 2832167857806752419, guid: 728a2c08e9a40ad408518383e8c34be7, type: 3}
   - {fileID: 6902370443342864527, guid: d7930dd70ea532e4689b38d2539542f6, type: 3}
-  ingredientsQuantity: 030000000100000001000000
+  - {fileID: 5584503125117904988, guid: a088581153560d14eb14c794800c0959, type: 3}
+  - {fileID: 6898678830030393560, guid: 73d508e0f8e0e944088b0a5e6ecace69, type: 3}
+  - {fileID: 8489471778279498550, guid: f3396a1db287dc743b5b008846ce2406, type: 3}
+  ingredientsQuantity: 0500000005000000050000000500000005000000
   ingredientsName:
-  - Lego
-  - "Substance Naus\xE9abonde"
-  - Nongipmahc
+  - Vision
+  - Drogue
+  - Chimique
+  - Fertilisant
+  - "Jouet \xE0 License"
   malus: 1
 --- !u!61 &79541181
 BoxCollider2D:

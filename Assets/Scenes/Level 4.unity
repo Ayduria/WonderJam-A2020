@@ -371,14 +371,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 8489471778279498550, guid: f3396a1db287dc743b5b008846ce2406, type: 3}
-  - {fileID: 6898678830030393560, guid: 73d508e0f8e0e944088b0a5e6ecace69, type: 3}
   - {fileID: 6902370443342864527, guid: d7930dd70ea532e4689b38d2539542f6, type: 3}
-  ingredientsQuantity: 030000000100000001000000
+  - {fileID: 5584503125117904988, guid: a088581153560d14eb14c794800c0959, type: 3}
+  - {fileID: 6466741719294611060, guid: 7346a6d56d6d1ff49b33a76e2b8b9234, type: 3}
+  - {fileID: 8641401176183708479, guid: ffe05bd9449ccbe41a6f76bde4c995b4, type: 3}
+  ingredientsQuantity: 03000000030000000300000003000000
   ingredientsName:
-  - Lego
-  - "Substance Naus\xE9abonde"
-  - Nongipmahc
+  - Champignon
+  - Fiole
+  - Os
+  - Truc Vert
   malus: 1
 --- !u!61 &79541181
 BoxCollider2D:

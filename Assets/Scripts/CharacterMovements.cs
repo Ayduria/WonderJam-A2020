@@ -30,6 +30,7 @@ public class CharacterMovements : MonoBehaviour
         gameObject.transform.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
         characterAnimations = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(0, 0);
     }
 
     // Update is called once per frame
