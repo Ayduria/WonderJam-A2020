@@ -24,6 +24,8 @@ public class CharacterMovements : MonoBehaviour
     public AudioSource jump;
     public AudioSource walk;
 
+    public AudioSource takeDamage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -123,7 +125,7 @@ public class CharacterMovements : MonoBehaviour
     void BetterJump() {
         if (rb.velocity.y < 0) {
             rb.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
-        } else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space)) {
+        } else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space) || rb.velocity.y > 0 && !Input.GetKey(KeyCode.W) || rb.velocity.y > 0 && !Input.GetKey(KeyCode.UpArrow)) {
             rb.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
         }   
     }

@@ -22,11 +22,11 @@ public class manageReceip : MonoBehaviour
         float dist = Vector3.Distance(player.transform.position, transform.position);
 
         if(dist < 2.5){
-            peceipPaper.SetActive(true);
+            if(Input.GetKeyDown(KeyCode.E)){
+                peceipPaper.SetActive(true);
+            }
         }
-        else{
-            peceipPaper.SetActive(false);
-        }
+        
     }
 
                 

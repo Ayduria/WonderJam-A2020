@@ -14,10 +14,15 @@ public class Timer : MonoBehaviour
     private GameObject enemyLevel;
     private GameObject Spitter;
 
+    public AudioSource normalMusic;
+    public AudioSource battleMusic;
+
     // Start is called before the first frame update
     void Start()
     {
          timerIsRunning = true;
+         normalMusic.Play();
+         battleMusic.Pause();
     }
 
     
@@ -30,10 +35,13 @@ public class Timer : MonoBehaviour
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
+                battleMusic.Pause();
             }
             else
             {
 
+                normalMusic.Pause();
+                battleMusic.Play();
 
                 timeRemaining = 0;
                 timerIsRunning = false;

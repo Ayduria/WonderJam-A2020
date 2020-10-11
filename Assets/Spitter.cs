@@ -56,9 +56,13 @@ public class Spitter : MonoBehaviour
                         FinalMalus += finalQuantitiesSetter;
                     }
 
-                    Debug.Log(FinalMalus);
+                   
 
                     if(currentMonstersNumber <  numberOfMonsters){
+
+                        if(FinalMalus > 10){
+                            FinalMalus = 10;
+                        }
 
                         switch(FinalMalus)
                         {
@@ -72,17 +76,42 @@ public class Spitter : MonoBehaviour
                                 numberOfMonsters = 10;
                                 monsterToKill = 10;
                                 break;
-                            case 3:
+                            case 3: 
+                                prefabs = Resources.Load<GameObject>("Mobs/slime");
+                                numberOfMonsters = 10;
+                                monsterToKill = 10;
+                                break;
+                            case 4: 
+                                prefabs = Resources.Load<GameObject>("Mobs/slime");
+                                numberOfMonsters = 10;
+                                monsterToKill = 10;
+                                break;
+                            case 5:
                                 prefabs = Resources.Load<GameObject>("Mobs/croc");
                                  numberOfMonsters = 7;
                                  monsterToKill = 7;
                                 break;
-                            case 4:
+                            case 6:
+                                prefabs = Resources.Load<GameObject>("Mobs/croc");
+                                 numberOfMonsters = 7;
+                                 monsterToKill = 7;
+                                break;
+                            case 7:
                                 prefabs = Resources.Load<GameObject>("Mobs/zombie");
                                  numberOfMonsters = 7;
                                  monsterToKill = 7;
                                 break;
-                            case 5:
+                            case 8:
+                                prefabs = Resources.Load<GameObject>("Mobs/zombie");
+                                 numberOfMonsters = 7;
+                                 monsterToKill = 7;
+                                break;
+                            case 9:
+                                prefabs = Resources.Load<GameObject>("Mobs/edritch");
+                                 numberOfMonsters = 5;
+                                 monsterToKill = 5;
+                                break;
+                            case 10:
                                 prefabs = Resources.Load<GameObject>("Mobs/edritch");
                                  numberOfMonsters = 5;
                                  monsterToKill = 5;
