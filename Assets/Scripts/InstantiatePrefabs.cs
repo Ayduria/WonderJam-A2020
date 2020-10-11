@@ -23,11 +23,9 @@ public class InstantiatePrefabs : MonoBehaviour
         Timer -= Time.deltaTime;
         if (Timer <= 0f)
         {
-
             prefabs = Resources.LoadAll<GameObject>("Ingredients");
             Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform.position, transform.rotation);
             Timer = TimerDefault;
-
         }
         
 

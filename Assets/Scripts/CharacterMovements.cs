@@ -17,7 +17,13 @@ public class CharacterMovements : MonoBehaviour
     public float rememberGroundedFor; 
     float lastTimeGrounded;
     public bool characterRight = true;
+<<<<<<< HEAD
     public int maxSpeed = 50;
+=======
+
+    AudioSource sounds;
+
+>>>>>>> origin/8-nouvelle-branche-lio
     private Animator characterAnimations;
 
     // Start is called before the first frame update
@@ -26,6 +32,7 @@ public class CharacterMovements : MonoBehaviour
         gameObject.transform.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
         characterAnimations = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        sounds = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,7 +57,7 @@ public class CharacterMovements : MonoBehaviour
 
     void Move() { 
         float x = Input.GetAxisRaw("Horizontal"); 
-        float moveBy = x * speed; 
+        float moveBy = x * speed;
 
         Vector3 InitialPos = gameObject.transform.localScale;
 
@@ -85,6 +92,7 @@ public class CharacterMovements : MonoBehaviour
     void Jump() { 
          if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor)) {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            sounds.Play();
         }
     }
     

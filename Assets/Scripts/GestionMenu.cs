@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
+
 public class GestionMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
@@ -13,7 +14,6 @@ public class GestionMenu : MonoBehaviour
 
     void Start()
     {
-
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -29,6 +29,7 @@ public class GestionMenu : MonoBehaviour
             }
             else
             {
+
                 Pause();
             }
         }
