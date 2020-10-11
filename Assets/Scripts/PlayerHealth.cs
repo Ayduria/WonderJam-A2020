@@ -19,20 +19,10 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        healthBar.SetHealth(currentHealth);
         if (currentHealth == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-    }
-
-    void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-    }
-
-    private void OnCollisionEnter2D(Collision2D other) {
-        if (other.gameObject.tag == "Enemy")
-            TakeDamage(10);
     }
 }
