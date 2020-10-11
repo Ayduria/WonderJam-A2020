@@ -1,0 +1,301 @@
+fileFormatVersion: 2
+guid: f057bf79a858aa84487ef175b6484f8c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9002549492220893439
+    second: eldritch walker_0
+  - first:
+      213: -7021910435607176983
+    second: eldritch walker_1
+  - first:
+      213: 3304899671799035676
+    second: eldritch walker_2
+  - first:
+      213: -2446385431836993261
+    second: eldritch walker_3
+  - first:
+      213: 6318148938445874196
+    second: eldritch walker_4
+  - first:
+      213: -8305341400340044166
+    second: eldritch walker_5
+  - first:
+      213: -1649592678924739551
+    second: eldritch walker_6
+  - first:
+      213: -1305323509386998090
+    second: eldritch walker_7
+  - first:
+      213: 4368898682948679759
+    second: eldritch walker_8
+  - first:
+      213: -878715169850852683
+    second: eldritch walker_9
+  - first:
+      213: 5761265069687154463
+    second: eldritch walker_10
+  - first:
+      213: -322141876942579637
+    second: eldritch walker_11
+  - first:
+      213: -2544770595373325932
+    second: eldritch walker_12
+  - first:
+      213: 6805245286607351140
+    second: eldritch walker_13
+  - first:
+      213: 814795728592985662
+    second: eldritch walker_14
+  - first:
+      213: -5805148925015602079
+    second: eldritch walker_15
+  - first:
+      213: -371632478221827810
+    second: eldritch walker_16
+  - first:
+      213: -1330083358124753103
+    second: eldritch walker_17
+  - first:
+      213: 4074841186615416265
+    second: eldritch walker_18
+  - first:
+      213: -8370377505548373065
+    second: eldritch walker_19
+  - first:
+      213: -2418932030079130678
+    second: eldritch walker_20
+  - first:
+      213: -268728157026284998
+    second: eldritch walker_21
+  - first:
+      213: -1996763667505588230
+    second: eldritch walker_22
+  - first:
+      213: -7849098457259045479
+    second: eldritch walker_23
+  - first:
+      213: 3060193497299665384
+    second: eldritch walker_24
+  - first:
+      213: 4409114141110066568
+    second: eldritch walker_25
+  - first:
+      213: 5114604362734518915
+    second: eldritch walker_26
+  - first:
+      213: -8471843456498618205
+    second: eldritch walker_27
+  - first:
+      213: 5006132270423428021
+    second: eldritch walker_28
+  - first:
+      213: 894326692539230040
+    second: eldritch walker_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: eldritch walker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff813bcc01b7fec70800000000000000
+      internalID: 9002549492220893439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eldritch walker_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8960999a92d8e90800000000000000
+      internalID: -7021910435607176983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eldritch walker_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17f2ebcdbc5ddd20800000000000000
+      internalID: 3304899671799035676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eldritch walker_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3195aa74961bc0ed0800000000000000
+      internalID: -2446385431836993261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eldritch walker_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414e31a0cf29ea750800000000000000
+      internalID: 6318148938445874196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
