@@ -17,7 +17,7 @@ public class CharacterMovements : MonoBehaviour
     public float rememberGroundedFor; 
     float lastTimeGrounded;
     public bool characterRight = true;
-    public int maxSpeed = 50;
+    public int maxSpeed = 50 ;
     private Animator characterAnimations;
 
     //Sons
@@ -82,16 +82,26 @@ public class CharacterMovements : MonoBehaviour
             walk.Play();
         }
     
-        rb.velocity = new Vector2(moveBy * Time.deltaTime, rb.velocity.y); 
+        rb.velocity = new Vector2(moveBy * Time.fixedDeltaTime, rb.velocity.y); 
 
-        if(rb.velocity.magnitude > maxSpeed * Time.deltaTime){
+        if(rb.velocity.magnitude > maxSpeed){
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         }
 
     }
 
     void Jump() { 
-         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor)) {
+        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor)) {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jump.Play();
+        }
+
+        if (Input.GetKeyDown(KeyCode.W) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor)) {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jump.Play();
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor)) {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jump.Play();
         }

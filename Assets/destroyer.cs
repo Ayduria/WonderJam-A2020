@@ -20,7 +20,7 @@ public class destroyer : MonoBehaviour
   
           
         if(other.gameObject){
-            if( other.gameObject.tag == "Erlen"){
+            if( other.gameObject.tag == "substance"){
                 
                 Destroy(gameObject);
 

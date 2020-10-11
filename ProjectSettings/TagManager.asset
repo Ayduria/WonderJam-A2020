@@ -10,6 +10,8 @@ TagManager:
   - Phaser
   - Enemy
   - Ground
+  - substance
+  - Spitter
   layers:
   - Default
   - TransparentFX
@@ -27,7 +29,7 @@ TagManager:
   - Character
   - Enemies
   - Enemies Transparent
-  - 
+  - Substance
   - 
   - 
   - 

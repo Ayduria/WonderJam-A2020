@@ -7,7 +7,7 @@ public class Grabber : MonoBehaviour
 
 
     private Vector3 mousePosition;
-    public float moveSpeed = 2f;
+    public float moveSpeed = 222f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,7 @@ public class Grabber : MonoBehaviour
                 if(rayHit.rigidbody.tag == "Grabbable"){
                     mousePosition = Input.mousePosition;
                     mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-                    rayHit.transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+                    rayHit.transform.position = new Vector2(mousePosition.x, mousePosition.y);
                 }
             }
 

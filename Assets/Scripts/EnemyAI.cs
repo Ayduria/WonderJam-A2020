@@ -8,12 +8,15 @@ public class EnemyAI : MonoBehaviour
     public float speed;
     public float maxVelocity  = 50f;
     private Transform target;
-    public int level = 1;
+    public float level = 0;
     public bool isGrounded;
     public int maxHealth;
     public int currentHealth;
     public int damage;
     public bool groundedOnce = false;
+    public int[] finalQuantities;
+    public int finalQuantitiesSetter;
+
     GameObject player;
 
     // Start is called before the first frame update
@@ -22,11 +25,26 @@ public class EnemyAI : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = GetComponent<Rigidbody2D>();
 
+
+        if(level == 0){
+            level = GameObject.FindGameObjectWithTag("substance").GetComponent<getIngredients>().malus;
+
+            finalQuantities = GameObject.FindGameObjectWithTag("substance").GetComponent<getIngredients>().ingredientsQuantity;
+
+            for (int i = 0; i < finalQuantities.Length; i++)
+            {
+                finalQuantitiesSetter += finalQuantities[i];
+            }
+
+            level += finalQuantitiesSetter;
+        }
+
+        Debug.Log(level);
         switch(level)
         {
             case 1: 
                 maxHealth = 20;
-                damage = 5;
+                damage = 0;
                 break;
             case 2: 
                 maxHealth = 40;
@@ -92,9 +110,9 @@ public class EnemyAI : MonoBehaviour
     private void move(){
 
         if (rb.position.x < target.position.x)
-            rb.velocity = new Vector2 (speed * Time.deltaTime, rb.velocity.y);
+            rb.velocity = new Vector2 (speed * Time.fixedDeltaTime, rb.velocity.y);
         else if (rb.position.x > target.position.x)
-            rb.velocity = new Vector2 (speed * Time.deltaTime * -1, rb.velocity.y);
+            rb.velocity = new Vector2 (speed * Time.fixedDeltaTime * -1, rb.velocity.y);
 
         if(rb.velocity.x >= 0.01f)
             transform.localRotation = Quaternion.Euler(0, 180, 0);
@@ -105,8 +123,10 @@ public class EnemyAI : MonoBehaviour
     private void jumpAttack(){
         float distance = Vector3.Distance(transform.localPosition, target.transform.localPosition);
 
-        if (distance < 1.5f && isGrounded == true)
-            rb.AddForce (Vector2.up * 8f);
+        if (distance < 1.5f && isGrounded == true){
+            rb.velocity = new Vector2(rb.velocity.x, 4);
+        }
+
     }
 
     void TakeDamage(int damageTaken)

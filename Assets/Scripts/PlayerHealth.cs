@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+    //public GameObject DeathScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +21,9 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         healthBar.SetHealth(currentHealth);
-        if (currentHealth == 0)
+        if (currentHealth <= 0)
         {
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

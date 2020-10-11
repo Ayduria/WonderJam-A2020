@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6952178448461333175}
   - component: {fileID: 6148619699195516885}
   - component: {fileID: 3741656401179015556}
-  - component: {fileID: -7795441166685562477}
+  - component: {fileID: -8135575725116328268}
   m_Layer: 15
-  m_Name: lapin
+  m_Name: edritch
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -97,7 +97,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6943045229410390070, guid: 6c15c3cdf64e0464b9614b14642ce3d6, type: 3}
+  m_Sprite: {fileID: 9002549492220893439, guid: f057bf79a858aa84487ef175b6484f8c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,7 +118,7 @@ Animator:
   m_GameObject: {fileID: 4651852068685439274}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f9ab7bfc3495bd24a8ea575c0075e2ee, type: 2}
+  m_Controller: {fileID: 9100000, guid: c2e9acbdbe6cb6841b2cc3d05ac978a3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -140,18 +140,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03244041, y: -0.15003489}
+  m_Offset: {x: 0.008109629, y: -0.26763046}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2, y: 3}
     newSize: {x: 2, y: 3.4375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.49154082, y: 0.34758964}
+  m_Size: {x: 1.1889998, y: 2.1236808}
   m_EdgeRadius: 0.1
 --- !u!114 &3741656401179015556
 MonoBehaviour:
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PhaserObject: {fileID: 1865611186173815502, guid: 0a135ea7c53125545983631eaf759381, type: 3}
---- !u!114 &-7795441166685562477
+--- !u!114 &-8135575725116328268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,10 +178,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319a0a73c83581641aabef766faf9bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  speed: 180
   maxVelocity: 50
-  level: 1
+  level: 0
   isGrounded: 0
   maxHealth: 0
   currentHealth: 0
   damage: 0
+  groundedOnce: 0
+  finalQuantities: 
+  finalQuantitiesSetter: 0
