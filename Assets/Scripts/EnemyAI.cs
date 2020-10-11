@@ -40,8 +40,8 @@ public class EnemyAI : MonoBehaviour
             level += finalQuantitiesSetter;
         }
 
-        if(level > 5){
-            level = 5;
+        if(level > 10){
+            level = 10;
         }
 
         switch(level)
@@ -54,15 +54,35 @@ public class EnemyAI : MonoBehaviour
                 maxHealth = 40;
                 damage = 10;
                 break;
-            case 3:
+            case 3: 
+                maxHealth = 40;
+                damage = 10;
+                break;
+            case 4: 
+                maxHealth = 40;
+                damage = 10;
+                break;
+            case 5:
                 maxHealth = 60;
                 damage = 15;
                 break;
-            case 4:
+            case 6:
+                maxHealth = 60;
+                damage = 15;
+                break;
+            case 7:
                 maxHealth = 80;
                 damage = 20;
                 break;
-            case 5:
+            case 8:
+                maxHealth = 80;
+                damage = 20;
+                break;
+            case 9:
+                maxHealth = 100;
+                damage = 25;
+                break;
+            case 10:
                 maxHealth = 100;
                 damage = 25;
                 break;

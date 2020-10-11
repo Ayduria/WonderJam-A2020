@@ -43,8 +43,8 @@ public class getIngredients : MonoBehaviour
                         ingredientsQuantity[i] -= ingredientsQuantity[i];
                         if(ingredientsQuantity[i] < 0){
                             malus ++;
-                            if(malus > 5){
-                                malus = 5;
+                            if(malus > 10){
+                                malus = 10;
                             }
                         }
 
@@ -58,8 +58,8 @@ public class getIngredients : MonoBehaviour
 
                 if(ingredientExist == false){
                     malus++;
-                    if(malus > 5){
-                        malus = 5;
+                    if(malus > 10){
+                        malus = 10;
                     }
                 }
                 else{
