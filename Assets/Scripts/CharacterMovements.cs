@@ -20,6 +20,10 @@ public class CharacterMovements : MonoBehaviour
     public int maxSpeed = 50;
     private Animator characterAnimations;
 
+    //Sons
+    public AudioSource jump;
+    public AudioSource walk;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,10 +45,12 @@ public class CharacterMovements : MonoBehaviour
         if(!characterRight){
             //gameObject.transform.localScale = new Vector3 (-0.5f, 0.5f, 0.5f);
             transform.localRotation = Quaternion.Euler(0, 180, 0);
+            
         }
         else{
             //gameObject.transform.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
             transform.localRotation = Quaternion.Euler(0, 0, 0);
+           
         }
     }
 
@@ -69,9 +75,11 @@ public class CharacterMovements : MonoBehaviour
         //Change l'état de l'animation
         if(x == 0){
             characterAnimations.SetBool("IsRunning", false);
+            walk.Pause();
         }
         else{
             characterAnimations.SetBool("IsRunning", true);
+            walk.Play();
         }
     
         rb.velocity = new Vector2(moveBy * Time.deltaTime, rb.velocity.y); 
@@ -85,6 +93,7 @@ public class CharacterMovements : MonoBehaviour
     void Jump() { 
          if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor)) {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jump.Play();
         }
     }
     

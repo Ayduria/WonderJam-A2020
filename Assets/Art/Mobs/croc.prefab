@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 4946830156361118302}
   - component: {fileID: 5667378408753203270}
   - component: {fileID: 6952178448461333175}
-  - component: {fileID: 6148619699195516885}
   - component: {fileID: 3741656401179015556}
-  m_Layer: 10
+  - component: {fileID: 3932948624196704034}
+  - component: {fileID: 8999873801153198684}
+  m_Layer: 15
   m_Name: croc
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,32 +127,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &6148619699195516885
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4651852068685439274}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.028384924, y: -0.17841983}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 1.5}
-    newSize: {x: 2, y: 3.4375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9432302, y: 1.1342604}
-  m_EdgeRadius: 0
 --- !u!114 &3741656401179015556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,3 +140,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PhaserObject: {fileID: 1865611186173815502, guid: 0a135ea7c53125545983631eaf759381, type: 3}
+--- !u!114 &3932948624196704034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4651852068685439274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319a0a73c83581641aabef766faf9bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2500
+  maxVelocity: 50
+  level: 1
+  isGrounded: 0
+  maxHealth: 0
+  currentHealth: 0
+  damage: 0
+--- !u!61 &8999873801153198684
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4651852068685439274}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.027042747, y: -0.24338253}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 1.5}
+    newSize: {x: 2, y: 3.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1166127, y: 0.5805548}
+  m_EdgeRadius: 0.1

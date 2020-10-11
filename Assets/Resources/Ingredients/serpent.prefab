@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6072093544763324705}
   - component: {fileID: 1892635355439793486}
   - component: {fileID: 2712417906767097454}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: serpent
   m_TagString: Grabbable
   m_Icon: {fileID: 0}

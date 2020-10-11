@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -5291920637147555586}
   - component: {fileID: -6377642908812842365}
   - component: {fileID: 7492538396031240359}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: bloc_lego
   m_TagString: Grabbable
   m_Icon: {fileID: 0}
