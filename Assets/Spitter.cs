@@ -56,9 +56,13 @@ public class Spitter : MonoBehaviour
                         FinalMalus += finalQuantitiesSetter;
                     }
 
-                    Debug.Log(FinalMalus);
+                   
 
                     if(currentMonstersNumber <  numberOfMonsters){
+
+                        if(FinalMalus > 5){
+                            FinalMalus = 5;
+                        }
 
                         switch(FinalMalus)
                         {

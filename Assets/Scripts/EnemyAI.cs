@@ -16,6 +16,7 @@ public class EnemyAI : MonoBehaviour
     public bool groundedOnce = false;
     public int[] finalQuantities;
     public int finalQuantitiesSetter;
+    public AudioSource Hit;
 
     GameObject player;
 
@@ -37,6 +38,10 @@ public class EnemyAI : MonoBehaviour
             }
 
             level += finalQuantitiesSetter;
+        }
+
+        if(level > 5){
+            level = 5;
         }
 
         switch(level)
@@ -133,11 +138,15 @@ public class EnemyAI : MonoBehaviour
     void TakeDamage(int damageTaken)
     {
         currentHealth -= damageTaken;
+
     }
 
     void InflictDamage(int damageDealt)
     {
         player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<PlayerHealth>().currentHealth -= damageDealt;
+        var damageSound = GetComponent<CharacterMovements>().takeDamage;
+
+        damageSound.Play();
     }
 }
