@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Grabbable
+  - Erlen
+  - Phaser
   layers:
   - Default
   - TransparentFX
@@ -14,11 +17,11 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Enemy Transparent
+  - Phaser
+  - Hole
+  - Ingredients
   - 
   - 
   - 

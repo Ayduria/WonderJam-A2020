@@ -7,23 +7,33 @@ public class InstantiatePrefabs : MonoBehaviour
 
     private GameObject[] prefabs;
     public int multiplier = 60;
+    private float currentIngredientsNumber;
+    public float Timer = 0.5f;
+    private float TimerDefault;
+    
 
     public Transform spawnerPosition;
  
     void Start(){
-
-        prefabs = Resources.LoadAll<GameObject>("Ingredients");
-
-        for (int i = 0; i < multiplier; i++)
-        {  
-            Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform.position, transform.rotation);
-        }
+         TimerDefault = Timer;
         
     }
     
     void Update()
     {
-       
+        Timer -= Time.deltaTime;
+        if (Timer <= 0f)
+        {
+
+            prefabs = Resources.LoadAll<GameObject>("Ingredients");
+            Instantiate(prefabs[Random.Range(0, prefabs.Length)], transform.position, transform.rotation);
+            Timer = TimerDefault;
+
+        }
+        
+
+        currentIngredientsNumber ++;
+
     }
 
 

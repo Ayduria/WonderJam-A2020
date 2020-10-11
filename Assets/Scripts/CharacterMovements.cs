@@ -17,7 +17,7 @@ public class CharacterMovements : MonoBehaviour
     public float rememberGroundedFor; 
     float lastTimeGrounded;
     public bool characterRight = true;
-
+    public int maxSpeed = 50;
     private Animator characterAnimations;
 
     // Start is called before the first frame update
@@ -39,10 +39,12 @@ public class CharacterMovements : MonoBehaviour
 
         //Rotate 
         if(!characterRight){
-            gameObject.transform.localScale = new Vector3 (-0.5f, 0.5f, 0.5f);
+            //gameObject.transform.localScale = new Vector3 (-0.5f, 0.5f, 0.5f);
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
         else{
-            gameObject.transform.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
+            //gameObject.transform.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
@@ -54,7 +56,7 @@ public class CharacterMovements : MonoBehaviour
 
         if(x == 1){
             characterRight = true;
-        }
+        }   
         else if(x == -1){
             characterRight = false;
         }
@@ -71,12 +73,13 @@ public class CharacterMovements : MonoBehaviour
         else{
             characterAnimations.SetBool("IsRunning", true);
         }
+    
+        rb.velocity = new Vector2(moveBy * Time.deltaTime, rb.velocity.y); 
 
+        if(rb.velocity.magnitude > maxSpeed * Time.deltaTime){
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+        }
 
-        
-
-
-        rb.velocity = new Vector2(moveBy, rb.velocity.y); 
     }
 
     void Jump() { 
