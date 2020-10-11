@@ -8,7 +8,8 @@ public class getIngredients : MonoBehaviour
 
     public GameObject[] ingredients;
     public int[] ingredientsQuantity;
-    private float malus = 0;
+    public string[] ingredientsName;
+    public float malus = 1;
     private bool ingredientExist = false;
 
 
@@ -18,10 +19,7 @@ public class getIngredients : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         for (int i = 0; i < ingredients.Length; i++)
-        {
-            Debug.Log(ingredients[i]);
-        } 
+        
     }
 
     // Update is called once per frame
@@ -33,25 +31,42 @@ public class getIngredients : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D ingredientColliding) {
   
 
-          
-        for (int i = 0; i < ingredients.Length; i++)
-        {
-            var trimmedName = ingredientColliding.gameObject.name.Replace("(clone)","");
+          if(ingredientColliding.gameObject.tag == "Grabbable"){
+              for (int i = 0; i < ingredients.Length; i++)
+                {
+                    var trimmedName = ingredientColliding.gameObject.name.Replace("(clone)","");
 
-            if(ingredientColliding.gameObject.name.Replace("(Clone)","") == ingredients[i].name){
-                ingredientExist = true;
+                    if(ingredientColliding.gameObject.name.Replace("(Clone)","") == ingredients[i].name){
+                        ingredientExist = true;
+
+
+                        ingredientsQuantity[i] -= ingredientsQuantity[i];
+                        if(ingredientsQuantity[i] < 0){
+                            malus ++;
+                            if(malus > 5){
+                                malus = 5;
+                            }
+                        }
+
+                        
+                    }
+
+
+                } 
+
+                
+
+                if(ingredientExist == false){
+                    malus++;
+                    if(malus > 5){
+                        malus = 5;
+                    }
+                }
+                else{
+                    ingredientExist = false;
+                }
+                }
+                
+
             }
-        } 
-
-        
-
-        if(ingredientExist == false){
-            malus++;
-            Debug.Log(malus);
-        }
-        else{
-            ingredientExist = false;
-        }
-
-    }
 }

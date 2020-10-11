@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6952178448461333175}
   - component: {fileID: 6148619699195516885}
   - component: {fileID: 3741656401179015556}
-  - component: {fileID: -6364101834468558495}
+  - component: {fileID: 3961558851568006866}
   m_Layer: 15
-  m_Name: slime
+  m_Name: zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4651852068685439274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.4998348, y: -2.190772, z: -37.35673}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -51,7 +51,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -97,7 +97,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3399216026287452766, guid: 374af6846c76c63458a1c0794761b057, type: 3}
+  m_Sprite: {fileID: 6607589555519762766, guid: 0eab646b26ef80c428df1a278ba70c33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,7 +118,7 @@ Animator:
   m_GameObject: {fileID: 4651852068685439274}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f24419643838771419bb48edc2554d58, type: 2}
+  m_Controller: {fileID: 9100000, guid: 80d720a75340b96409280364652e9631, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -140,18 +140,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0072990656, y: -0.24654424}
+  m_Offset: {x: -0.045288563, y: -0.15527451}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2, y: 3.4375}
     newSize: {x: 2, y: 3.4375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.65211797, y: 0.2810881}
+  m_Size: {x: 0.9518981, y: 2.738765}
   m_EdgeRadius: 0.1
 --- !u!114 &3741656401179015556
 MonoBehaviour:
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PhaserObject: {fileID: 1865611186173815502, guid: 0a135ea7c53125545983631eaf759381, type: 3}
---- !u!114 &-6364101834468558495
+--- !u!114 &3961558851568006866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,10 +178,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319a0a73c83581641aabef766faf9bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1500
+  speed: 100
   maxVelocity: 50
-  level: 1
+  level: 0
   isGrounded: 0
   maxHealth: 0
   currentHealth: 0
   damage: 0
+  groundedOnce: 0
+  finalQuantities: 
+  finalQuantitiesSetter: 0

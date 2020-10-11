@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: dbd7f5499386860409dd5b611d779c29
+guid: 0eab646b26ef80c428df1a278ba70c33
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1220572223813447168
-    second: zombie_animation_LOL_0
+      213: 6607589555519762766
+    second: zombi_g_0
   - first:
-      213: -487545490668034627
-    second: zombie_animation_LOL_1
+      213: 2913823511184052021
+    second: zombi_g_1
   - first:
-      213: -3318920317548242035
-    second: zombie_animation_LOL_2
+      213: 2416034313995750825
+    second: zombi_g_2
   - first:
-      213: 9061045125260534766
-    second: zombie_animation_LOL_3
+      213: 6753339735514848137
+    second: zombi_g_3
   - first:
-      213: 1066230031233942600
-    second: zombie_animation_LOL_4
+      213: -4375933029250659339
+    second: zombi_g_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zombie_animation_LOL_0
+      name: zombi_g_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00eeb1f78f750f010800000000000000
-      internalID: 1220572223813447168
+      spriteID: e41365631bfd2bb50800000000000000
+      internalID: 6607589555519762766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_animation_LOL_1
+      name: zombi_g_1
       rect:
         serializedVersion: 2
         x: 32
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db563e895f3eb39f0800000000000000
-      internalID: -487545490668034627
+      spriteID: 53f8e4a9b0bff6820800000000000000
+      internalID: 2913823511184052021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_animation_LOL_2
+      name: zombi_g_2
       rect:
         serializedVersion: 2
         x: 64
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8bd5ba3e83d0f1d0800000000000000
-      internalID: -3318920317548242035
+      spriteID: 9ad0fda686a778120800000000000000
+      internalID: 2416034313995750825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_animation_LOL_3
+      name: zombi_g_3
       rect:
         serializedVersion: 2
         x: 96
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee360f0b88c4fbd70800000000000000
-      internalID: 9061045125260534766
+      spriteID: 98b94ee65bea8bd50800000000000000
+      internalID: 6753339735514848137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_animation_LOL_4
+      name: zombi_g_4
       rect:
         serializedVersion: 2
         x: 128
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8448d8470920cce00800000000000000
-      internalID: 1066230031233942600
+      spriteID: 5fb8d9638109543c0800000000000000
+      internalID: -4375933029250659339
       vertices: []
       indices: 
       edges: []

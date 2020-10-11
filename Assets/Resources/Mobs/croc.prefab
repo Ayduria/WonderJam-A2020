@@ -51,7 +51,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -152,13 +152,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319a0a73c83581641aabef766faf9bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2500
+  speed: 200
   maxVelocity: 50
-  level: 1
+  level: 0
   isGrounded: 0
   maxHealth: 0
   currentHealth: 0
   damage: 0
+  groundedOnce: 0
+  finalQuantities: 
+  finalQuantitiesSetter: 0
 --- !u!61 &8999873801153198684
 BoxCollider2D:
   m_ObjectHideFlags: 0
