@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WelcomeScreen.unity
     guid: c4a6f5305765dce4d89c9044d57316ae
-  - enabled: 0
-    path: Assets/Scenes/SceneLio.unity
-    guid: e9edd9a3c6c02004baf50c3e86dcd2f6
   - enabled: 1
+    path: Assets/Scenes/SceneLio.unity
+    guid: 7283a11ee43fde04680c962c8acef132
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
