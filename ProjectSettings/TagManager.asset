@@ -7,6 +7,8 @@ TagManager:
   - Grabbable
   - Erlen
   - Phaser
+  - Enemy
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -22,6 +24,12 @@ TagManager:
   - Phaser
   - Hole
   - Ingredients
+  - Enemies
+  - Projectiles
+  - Character
+  - 
+  - 
+>>>>>>> origin/5-enemy-ai
   - 
   - 
   - 

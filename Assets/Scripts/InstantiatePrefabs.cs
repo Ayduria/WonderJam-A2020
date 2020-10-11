@@ -16,7 +16,6 @@ public class InstantiatePrefabs : MonoBehaviour
  
     void Start(){
          TimerDefault = Timer;
-        
     }
     
     void Update()
